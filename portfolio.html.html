@@ -1,0 +1,1138 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="c4252191-c5e9-471d-8da3-13035c7582ff" data-section-id="c4252191-c5e9-471d-8da3-13035c7582ff">
+
+
+                <htmlcode id="el-z37vm5rm">
+<div id="root">
+  <nav id="navbar" class="fixed w-full bg-neutral-900 text-green-400 px-4 py-3 z-50">
+    <div class="container mx-auto" id="el-ghbxs1m9">
+      <div class="flex justify-between items-center" id="el-1hpsvz2j">
+        <a href="#" class="text-2xl font-bold tracking-wider hover:text-green-300" id="el-42xx9lus">
+          Eternxlkz
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8" id="el-alntcw5r">
+          <a href="#hero" class="hover:text-green-300 transition-colors" id="el-f22xf94r">Home</a>
+          <a href="#about" class="hover:text-green-300 transition-colors" id="el-dbflp7sw">About</a>
+          <a href="#skills" class="hover:text-green-300 transition-colors" id="el-mhfboytd">Skills</a>
+          <a href="#projects" class="hover:text-green-300 transition-colors" id="el-afp7hau3">Projects</a>
+          <a href="#education" class="hover:text-green-300 transition-colors" id="el-qw9qtycg">Education</a>
+          <a href="#contact" class="hover:text-green-300 transition-colors" id="el-1zj3r66j">Contact</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="md:hidden text-green-400 hover:text-green-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-99u2d43s">
+            <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M4 6h16M4 12h16M4 18h16" id="el-byx33vf3"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 bg-neutral-900 mt-3 py-2 px-4 animate__animated animate__fadeIn">
+        <a href="#hero" class="block py-2 hover:text-green-300 transition-colors" id="el-3ipq16w1">Home</a>
+        <a href="#about" class="block py-2 hover:text-green-300 transition-colors" id="el-ylt5s4gx">About</a>
+        <a href="#skills" class="block py-2 hover:text-green-300 transition-colors" id="el-dorz7txa">Skills</a>
+        <a href="#projects" class="block py-2 hover:text-green-300 transition-colors" id="el-auzjvz90">Projects</a>
+        <a href="#education" class="block py-2 hover:text-green-300 transition-colors" id="el-q8m3abcy">Education</a>
+        <a href="#contact" class="block py-2 hover:text-green-300 transition-colors" id="el-i22yxr6k">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</div>
+</htmlcode>
+              </element><element id="233f855f-7611-4e06-89a6-cab0709f2c77" data-section-id="233f855f-7611-4e06-89a6-cab0709f2c77">
+
+<htmlCode>
+<div id="root">
+  <section id="hero" class="min-h-screen bg-neutral-900 flex items-center relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="grid-pattern"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="animate__animated animate__fadeIn">
+          <p class="text-green-400 text-xl mb-4 font-mono">&lt;Hello World/&gt;</p>
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+            I'm <span class="text-green-400 typewriter">Aashutosh Sah</span>
+          </h1>
+          <p class="text-green-300 text-lg md:text-xl mb-8 font-mono">
+            Data Science Student | Science Faculty
+          </p>
+          <div class="text-neutral-300 text-md md:text-lg mb-12 font-mono leading-relaxed">
+            Grade 11 Science student at Nobel Academy<br/>
+            Data Science enthusiast at Broadway Infosys
+          </div>
+          
+          <div class="flex justify-center space-x-4">
+            <a href="#contact" class="bg-green-500 hover:bg-green-600 text-neutral-900 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+              Hire Me
+            </a>
+            <a href="#skills" class="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-neutral-900 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+              View Skills
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .grid-pattern {
+        background-image: 
+          linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+      }
+
+      .typewriter {
+        border-right: 3px solid #4ade80;
+        animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #4ade80 }
+      }
+    </style>
+
+    <script>
+      // Add floating animation to the main content
+      const heroContent = document.querySelector('#hero > div');
+      let float = true;
+
+      function floatingAnimation() {
+        if (!float) return;
+        heroContent.style.transform = `translateY(${5 * Math.sin(Date.now() / 1000)}px)`;
+        requestAnimationFrame(floatingAnimation);
+      }
+
+      floatingAnimation();
+
+      // Stop animation when page is not visible
+      document.addEventListener('visibilitychange', () => {
+        float = !document.hidden;
+        if (float) floatingAnimation();
+      });
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="0130f260-74f2-4998-9a93-a7e23ff4f0d6" data-section-id="0130f260-74f2-4998-9a93-a7e23ff4f0d6">
+
+<htmlCode>
+<div id="root">
+  <section id="about" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-400 mb-12 text-center animate__animated animate__fadeIn">
+          About Me
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="bg-neutral-900 p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInLeft">
+            <div class="border-2 border-green-400 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-green-400 mb-4">Education</h3>
+              <ul class="space-y-4 text-neutral-300">
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-2">▹</span>
+                  <span>Grade 11 Science Student at Nobel Academy</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-2">▹</span>
+                  <span>Data Science Student at Broadway Infosys</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-neutral-900 p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInRight">
+            <div class="border-2 border-green-400 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-green-400 mb-4">Technical Expertise</h3>
+              <ul class="space-y-4 text-neutral-300">
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-2">▹</span>
+                  <span>Data Wrangling and Dataset Management</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-2">▹</span>
+                  <span>Machine Learning Model Development</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-2">▹</span>
+                  <span>Mastery in Pandas and NumPy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center bg-neutral-900 p-8 rounded-lg shadow-xl animate__animated animate__fadeInUp">
+          <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl mx-auto">
+            As a passionate data science enthusiast, I combine my academic pursuits with practical programming skills. 
+            My journey involves mastering powerful tools and technologies while maintaining excellence in my academic studies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Intersection Observer for animation triggers
+      const observerOptions = {
+        threshold: 0.2
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      const animatedElements = document.querySelectorAll('.animate__animated');
+      animatedElements.forEach(el => observer.observe(el));
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="0d2574f1-42f4-460e-915d-ce704156dd97" data-section-id="0d2574f1-42f4-460e-915d-ce704156dd97">
+
+
+                <htmlcode id="el-6mkwjzj1">
+<div id="root">
+  <section id="skills" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-400 mb-12 text-center animate__animated animate__fadeIn">
+        Why Work With Me?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Data Science Expertise -->
+        <div class="bg-neutral-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInLeft">
+          <div class="border-2 border-green-400 rounded-lg p-6">
+            <h3 class="text-2xl font-bold text-green-400 mb-6">Data Science Excellence</h3>
+            <p class="text-green-300 mb-4">With extensive expertise in Pandas (95%), NumPy (90%), and Machine Learning (85%), I deliver:</p>
+            <ul class="text-green-300 space-y-2 list-disc pl-4">
+              <li>Robust data analysis solutions</li>
+              <li>Advanced statistical modeling</li>
+              <li>Scalable ML implementations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Data Management Value -->
+        <div class="bg-neutral-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp">
+          <div class="border-2 border-green-400 rounded-lg p-6">
+            <h3 class="text-2xl font-bold text-green-400 mb-6">Data Management Mastery</h3>
+            <p class="text-green-300 mb-4">Proven track record in:</p>
+            <ul class="text-green-300 space-y-2 list-disc pl-4">
+              <li>Expert data wrangling (88%)</li>
+              <li>Efficient dataset management (92%)</li>
+              <li>Insightful data analysis (87%)</li>
+              <li>End-to-end data solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Programming Prowess -->
+        <div class="bg-neutral-800 rounded-lg p-6 hover:transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInRight">
+          <div class="border-2 border-green-400 rounded-lg p-6">
+            <h3 class="text-2xl font-bold text-green-400 mb-6">Technical Proficiency</h3>
+            <p class="text-green-300 mb-4">Strong programming foundation with:</p>
+            <ul class="text-green-300 space-y-2 list-disc pl-4">
+              <li>Advanced Python development (93%)</li>
+              <li>Database expertise with SQL (80%)</li>
+              <li>Version control mastery with Git (85%)</li>
+              <li>Best coding practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Animation for content fade-in
+      function animateContent() {
+        const cards = document.querySelectorAll('.animate__animated');
+        cards.forEach(card => {
+          card.style.opacity = '0';
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                card.style.opacity = '1';
+                card.style.transition = 'opacity 0.8s ease-in-out';
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.2 });
+          
+          observer.observe(card);
+        });
+      }
+
+      // Initialize animations
+      document.addEventListener('DOMContentLoaded', () => {
+        animateContent();
+      });
+    </script>
+  </section>
+</div>
+</htmlcode>
+              </element><element id="4dd7240e-d0d0-4fb3-ba02-f72dc578e6b7" data-section-id="4dd7240e-d0d0-4fb3-ba02-f72dc578e6b7">
+
+<htmlCode>
+<div id="root">
+  <section id="projects" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-400 mb-12 text-center animate__animated animate__fadeIn">
+        Featured Projects
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Project 1 -->
+        <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp">
+          <div class="p-6 border-2 border-green-400 rounded-lg h-full flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-green-400">Data Analysis Dashboard</h3>
+              <div class="text-green-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-300 mb-4 flex-grow">An interactive dashboard for visualizing complex datasets using Pandas and NumPy.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">Pandas</span>
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">Data Viz</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+          <div class="p-6 border-2 border-green-400 rounded-lg h-full flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-green-400">ML Prediction Model</h3>
+              <div class="text-green-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-300 mb-4 flex-grow">Machine learning model for predictive analysis using scikit-learn.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">ML</span>
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">scikit-learn</span>
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">NumPy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-neutral-900 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+          <div class="p-6 border-2 border-green-400 rounded-lg h-full flex flex-col">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-xl font-bold text-green-400">Data Wrangling Tool</h3>
+              <div class="text-green-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-300 mb-4 flex-grow">Automated data cleaning and transformation pipeline for large datasets.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">Data Wrangling</span>
+              <span class="px-3 py-1 bg-neutral-700 text-green-400 rounded-full text-sm">Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Hover effect for project cards
+      const projectCards = document.querySelectorAll('#projects .bg-neutral-900');
+      
+      projectCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.classList.add('shadow-green-400/20', 'shadow-lg');
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.classList.remove('shadow-green-400/20', 'shadow-lg');
+        });
+      });
+
+      // Intersection Observer for animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const animatedElements = document.querySelectorAll('.animate__animated');
+      animatedElements.forEach(el => observer.observe(el));
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="bfdd0ed0-d2ec-4153-b4f3-3db5724e95d8" data-section-id="bfdd0ed0-d2ec-4153-b4f3-3db5724e95d8">
+
+<htmlCode>
+<div id="root">
+  <section id="education" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-400 mb-12 text-center animate__animated animate__fadeIn">
+        Education & Training
+      </h2>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-green-400"></div>
+
+          <!-- Nobel Academy -->
+          <div class="relative flex items-center justify-between md:justify-normal mb-16 animate__animated animate__fadeInLeft">
+            <div class="w-full md:w-1/2 md:pr-8 order-1 md:text-right">
+              <div class="bg-neutral-800 p-6 rounded-lg border-2 border-green-400 shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Nobel Academy</h3>
+                <p class="text-green-300 mb-2">Grade 11 - Science Faculty</p>
+                <p class="text-neutral-300">Currently pursuing higher secondary education with focus on scientific studies and mathematics.</p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-green-400 border-4 border-neutral-900 z-10"></div>
+          </div>
+
+          <!-- Broadway Infosys -->
+          <div class="relative flex items-center justify-between md:justify-normal mb-16 animate__animated animate__fadeInRight">
+            <div class="w-full md:w-1/2 md:pl-8 md:ml-auto">
+              <div class="bg-neutral-800 p-6 rounded-lg border-2 border-green-400 shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Broadway Infosys</h3>
+                <p class="text-green-300 mb-2">Data Science Training</p>
+                <p class="text-neutral-300">Specialized training in data science, focusing on Python, Pandas, NumPy, and Machine Learning.</p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-green-400 border-4 border-neutral-900 z-10"></div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="relative flex items-center justify-between md:justify-normal animate__animated animate__fadeInLeft">
+            <div class="w-full md:w-1/2 md:pr-8 order-1 md:text-right">
+              <div class="bg-neutral-800 p-6 rounded-lg border-2 border-green-400 shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Professional Certifications</h3>
+                <p class="text-green-300 mb-2">Data Science & ML</p>
+                <p class="text-neutral-300">Various certifications in data analysis, machine learning, and programming.</p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-green-400 border-4 border-neutral-900 z-10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateX(0)";
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const animatedElements = document.querySelectorAll('.animate__animated');
+      animatedElements.forEach(el => {
+        el.style.opacity = "0";
+        el.style.transform = el.classList.contains('animate__fadeInLeft') 
+          ? "translateX(-50px)" 
+          : "translateX(50px)";
+        observer.observe(el);
+      });
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="46506428-5406-4f81-8e2b-a146c63a39fa" data-section-id="46506428-5406-4f81-8e2b-a146c63a39fa">
+
+
+                <htmlcode id="el-onyx7meo">
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4" id="el-1b90vsli">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-400 mb-12 text-center animate__animated animate__fadeIn" id="el-l5jo7ml2">
+        Get In Touch
+      </h2>
+
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12" id="el-lcec72sg">
+        <!-- Contact Form -->
+        <div class="bg-neutral-900 p-8 rounded-lg border-2 border-green-400 animate__animated animate__fadeInLeft" id="el-9k8s8r1k">
+  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=ghost" alt="Ghost illustration" class="w-64 h-64 mx-auto mb-4 animate__animated animate__floating">
+</div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8 animate__animated animate__fadeInRight" id="el-c1f5o32t">
+          <!-- Direct Contact -->
+          <div class="bg-neutral-900 p-8 rounded-lg border-2 border-green-400" id="el-61kpw46q">
+            <h3 class="text-2xl font-bold text-green-400 mb-6" id="el-yzpi22jq">Contact Information</h3>
+            <div class="space-y-4" id="el-0mwy9hqh">
+              <div class="flex items-center space-x-4" id="el-pzynrz2l">
+                <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-cn0phsuy">
+                  <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" id="el-rz0k7pyl"></path>
+                </svg>
+                <a href="tel:9818369978" class="text-green-300 hover:text-green-400 transition-colors" id="el-if708d3b">+977 9818369978</a>
+              </div>
+              <div class="flex items-center space-x-4" id="el-bt02us5e">
+                <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-0b8r765z">
+                  <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" id="el-f819bqyu"></path>
+                </svg>
+                <a href="mailto:wxnotgod@gmail.com" class="text-green-300 hover:text-green-400 transition-colors" id="el-wgrdbemb">wxnotgod@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="bg-neutral-900 p-8 rounded-lg border-2 border-green-400" id="el-90ce27hz">
+            <h3 class="text-2xl font-bold text-green-400 mb-6" id="el-bq4v1e7m">Social Media</h3>
+            <div class="flex space-x-6" id="el-xhzvu5ks">
+              <a href="https://www.facebook.com/Aashutosh5209000" target="_blank" class="text-green-400 hover:text-green-300 transition-colors" id="el-lezrt8rf">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" id="el-77pi2s3e">
+                  <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z" id="el-2m974cq7"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/_eternxlkz/" target="_blank" class="text-green-400 hover:text-green-300 transition-colors" id="el-wceuesab">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" id="el-iqv8k8n8">
+                  <path d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.35.2-6.78,2.62-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.36,2.62,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.35-.2,6.78-2.62,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.35-2.62-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" id="el-hjbbfnxv"></path>
+                </svg>
+              </a>
+              <a href="https://github.com/lordAashutosh" target="_blank" class="text-green-400 hover:text-green-300 transition-colors" id="el-lpu4b6lf">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" id="el-7c3l08jw">
+                  <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z" id="el-1ery5dtx"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add form submission logic here
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+      });
+
+      // Animation on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const animatedElements = document.querySelectorAll('.animate__animated');
+      animatedElements.forEach(el => observer.observe(el));
+    </script>
+  </section>
+</div>
+</htmlcode>
+              </element><element id="fde69c2a-4a0d-4113-b7f9-459778940db9" data-section-id="fde69c2a-4a0d-4113-b7f9-459778940db9">
+
+
+                <htmlcode id="el-3ca0uhx4">
+<div id="root">
+  <section id="social" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4" id="el-m42ocff5">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-400 mb-12 text-center animate__animated animate__fadeIn" id="el-mxfds75c">
+        Connect With Me
+      </h2>
+
+      <div class="max-w-4xl mx-auto" id="el-8pgztazy">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="el-1v6oq0jv">
+          <!-- Facebook -->
+          <div class="bg-neutral-800 rounded-lg p-8 border-2 border-green-400 transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" id="el-7hdqytz3">
+            <a href="https://www.facebook.com/Aashutosh5209000" target="_blank" class="block text-center" id="el-cxvj9gcx">
+              <div class="w-16 h-16 mx-auto mb-6 bg-green-400 rounded-full flex items-center justify-center" id="el-epwckhif">
+                <svg class="w-8 h-8 text-neutral-900" fill="currentColor" viewBox="0 0 24 24" id="el-mgasncgs">
+                  <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z" id="el-gcksfy4c"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-green-400 mb-2" id="el-2rfixof1">Facebook</h3>
+              <p class="text-neutral-300" id="el-esvrqo9p">Follow my journey</p>
+              <div class="mt-4 inline-block px-6 py-2 border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-neutral-900 transition-all duration-300 rounded-full" id="el-1pbnj4wu">
+                Connect
+              </div>
+            </a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="bg-neutral-800 rounded-lg p-8 border-2 border-green-400 transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s" id="el-ca7rfrwt">
+            <a href="https://www.instagram.com/_eternxlkz/" target="_blank" class="block text-center" id="el-ih72i6uk">
+              <div class="w-16 h-16 mx-auto mb-6 bg-green-400 rounded-full flex items-center justify-center" id="el-g60l2vox">
+                <svg class="w-8 h-8 text-neutral-900" fill="currentColor" viewBox="0 0 24 24" id="el-igqay19w">
+                  <path d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16Z" id="el-fe0gje68"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-green-400 mb-2" id="el-403c7p38">Instagram</h3>
+              <p class="text-neutral-300" id="el-cfyyuesz">Visual updates</p>
+              <div class="mt-4 inline-block px-6 py-2 border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-neutral-900 transition-all duration-300 rounded-full" id="el-bkz4lvom">
+                Follow
+              </div>
+            </a>
+          </div>
+
+          <!-- GitHub -->
+          <div class="bg-neutral-800 rounded-lg p-8 border-2 border-green-400 transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s" id="el-bk2y6a7f">
+            <a href="https://github.com/lordAashutosh" target="_blank" class="block text-center" id="el-mtctq5oa">
+              <div class="w-16 h-16 mx-auto mb-6 bg-green-400 rounded-full flex items-center justify-center" id="el-l3p0jpcm">
+                <svg class="w-8 h-8 text-neutral-900" fill="currentColor" viewBox="0 0 24 24" id="el-icnpg22k">
+                  <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z" id="el-9te587je"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-green-400 mb-2" id="el-hwstv88s">GitHub</h3>
+              <p class="text-neutral-300" id="el-frafojwc">Check my code</p>
+              <div class="mt-4 inline-block px-6 py-2 border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-neutral-900 transition-all duration-300 rounded-full" id="el-19jsl5e4">
+                View Projects
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Stats -->
+        <div class="mt-16 grid grid-cols-3 gap-8 text-center animate__animated animate__fadeInUp" id="el-ywz2ge3v">
+          <div class="bg-neutral-800 p-6 rounded-lg border-2 border-green-400" id="el-gu1ssalk">
+            <h4 class="text-3xl font-bold text-green-400 mb-2" id="el-zrudkecb">500+</h4>
+            <p class="text-neutral-300" id="el-aowb64j5">Connections</p>
+          </div>
+          <div class="bg-neutral-800 p-6 rounded-lg border-2 border-green-400" id="el-5t0hubzz">
+            <h4 class="text-3xl font-bold text-green-400 mb-2" id="el-ooz4763d">24/7</h4>
+            <p class="text-neutral-300" id="el-zbypkb98">Projects</p>
+          </div>
+          <div class="bg-neutral-800 p-6 rounded-lg border-2 border-green-400" id="el-y321jxx5">
+            <h4 class="text-3xl font-bold text-green-400 mb-2" id="el-k2p1ho3w">10+</h4>
+            <p class="text-neutral-300" id="el-atdz0mkg">Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Intersection Observer for animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated');
+            entry.target.style.opacity = "1";
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      document.querySelectorAll('.animate__animated').forEach(el => {
+        el.style.opacity = "0";
+        observer.observe(el);
+      });
+    </script>
+  </section>
+</div>
+</htmlcode>
+              </element><element id="dd515609-f85b-4408-a740-2ad4bbce744a" data-section-id="dd515609-f85b-4408-a740-2ad4bbce744a">
+
+
+                <htmlcode id="el-9d013r5h">
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-green-400 py-12">
+    <div class="container mx-auto px-4" id="el-y19hssv2">
+      <!-- Main Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8" id="el-e4zirkrq">
+        <!-- Logo & About -->
+        <div class="animate__animated animate__fadeIn" id="el-jq89l0i3">
+          <h2 class="text-2xl font-bold mb-4" id="el-y3cf9ksy">Eternxlkz</h2>
+          <p class="text-neutral-400 mb-4" id="el-vq6yi1ek">Aspiring data scientist and student, passionate about transforming data into meaningful insights.</p>
+          <div class="flex space-x-4" id="el-6thyoi2v">
+            <a href="https://github.com/lordAashutosh" target="_blank" class="hover:text-green-300 transition-colors" id="el-6wggr3t2">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-1fwsvzup">
+                <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z" id="el-ldrk460o"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/Aashutosh5209000" target="_blank" class="hover:text-green-300 transition-colors" id="el-gxnkxl5x">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-zuw6rdl3">
+                <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z" id="el-ei9w77mc"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/_eternxlkz/" target="_blank" class="hover:text-green-300 transition-colors" id="el-003m9m5s">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-uvcm8mzw">
+                <path d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.65.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16Z" id="el-8pqhdjqm"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s" id="el-l4bm9txa">
+          <h3 class="text-xl font-bold mb-4" id="el-thr4w33x">Quick Links</h3>
+          <ul class="space-y-2" id="el-td2yooe5">
+            <li id="el-psf38lly"><a href="#about" class="text-neutral-400 hover:text-green-300 transition-colors" id="el-v39971pk">About</a></li>
+            <li id="el-s9knjl5g"><a href="#skills" class="text-neutral-400 hover:text-green-300 transition-colors" id="el-4htsk27t">Skills</a></li>
+            <li id="el-rzwpi3ae"><a href="#projects" class="text-neutral-400 hover:text-green-300 transition-colors" id="el-hsec7v9y">Projects</a></li>
+            <li id="el-z2px7c3z"><a href="#education" class="text-neutral-400 hover:text-green-300 transition-colors" id="el-fc77y7b1">Education</a></li>
+            <li id="el-mrjteh2w"><a href="#contact" class="text-neutral-400 hover:text-green-300 transition-colors" id="el-qzd2rby0">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="animate__animated animate__fadeIn" style="animation-delay: 0.4s" id="el-ivoqu5d6">
+          <h3 class="text-xl font-bold mb-4" id="el-jgxcwkrc">Contact Info</h3>
+          <ul class="space-y-2" id="el-p0ty4b9n">
+            <li class="flex items-center space-x-2" id="el-vrvk7h7w">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-d4t0q32l">
+                <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" id="el-98zaq3jh"></path>
+              </svg>
+              <span class="text-neutral-400" id="el-fhpj3x1y">+977 9818369978</span>
+            </li>
+            <li class="flex items-center space-x-2" id="el-cxfu1ceh">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-7b8hs8e8">
+                <path strokelinecap="round" strokelinejoin="round" strokewidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" id="el-68jvvytd"></path>
+              </svg>
+              <span class="text-neutral-400" id="el-27v7r8tg">wxnotgod@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-neutral-800 pt-8 mt-8 text-center animate__animated animate__fadeIn" id="el-u2gz9si5">
+        <p class="text-neutral-400" id="el-5yyb6vaq">© 2024 Aashutosh Sah. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      // Intersection Observer for animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const animatedElements = document.querySelectorAll('.animate__animated');
+      animatedElements.forEach(el => observer.observe(el));
+    </script>
+  </footer>
+</div>
+</htmlcode>
+              </element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
